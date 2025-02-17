@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> Tasty </title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="HomeStyle.css"/>
+	<script src="slideshow.js"></script>
+	<script src="form.js"></script>
+</head>
+
+<body>
+
+	<div id="header">
+		<a href="Home.html">
+			<img id="logo" src="Images/LOGO.png" alt="Tasty">
+		</a>
+	</div>
+
+	<div id="menu">
+		<ul>
+			<li><a href="Breakfast.html"> Breakfast </a></li>
+			<li><a href="Snacks.html"> Snacks </a></li>
+			<li><a href="Salads.html"> Salads </a></li>
+			<li><a href="Lunch.html"> Lunch </a></li>
+			<li><a href="Desserts.html"> Desserts </a></li>
+			<li><a href="Tell Us What You Think.html"> Tell Us What You Think </a></li>
+		</ul>
+	</div>
+
+	<div id="content">
+		<h1> WELCOME TO TASTY! </h1>
+		<p> Here you'll find recipes made for everyday life. <br>
+		Whether you are seeking quick and easy meals or gourmet culinary adventures, our recipe treasure trove will inspire you to embark on a flavorful voyage like no other. </pS>
+	
+		<div id="slideshow">
+			<div>
+				<img id="slide-img" src="Images/Menu/1.png" alt="Categories">
+			</div>
+			<a id="prev" onclick="prev();"> &#10094; </a>
+			<a id="next" onclick="next();"> &#10095; </a>
+		</div>
+	
+		<h3> Don't forget to <a href="Tell Us What You Think.html" target="_blank"> tell us what you think. </a><h3>
+	</div>
+
+	<div id="subscribe">
+		<h3> Subscribe to our newsletter. </h3>
+		<form name="form" method="post" onsubmit="return validation()"> 
+			<label> First Name: * </label>
+				<input type="text" name="first" placeholder="Enter first name.">
+			<br><br>
+	 		<label> Last Name: * </label>
+				<input type="text" name="last" placeholder="Enter last name.">
+			<br><br>
+			<label> Email: * </label> 
+				<input type="text" name="email" placeholder="Enter email.">
+			<br><br>
+			<input type="reset" value="Clear" onclick="clearThis();">
+			<input type="submit" value="Subscribe">
+		</form>
+	</div>
+
+	<div id="footer">
+		<h5> &copy Tasty </h5>
+		<button onclick="scrollToTop()" id="scroll" title="Go to top"><strong> TOP </strong></button>
+	</div>
+
+	<script src="scroll.js"></script>
+</body>
+</html>

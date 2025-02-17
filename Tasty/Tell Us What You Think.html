@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> Tell Us What You Think </title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="TellUsStyle.css"/>
+	<script src="form.js"></script>
+</head>
+
+<body>
+	<div id="header">
+		<a href="Home.html">
+			<img id="logo" src="Images/LOGO.png" alt="Tasty">
+		</a>	
+	</div>
+
+	<div id="menu">
+		<ul>
+			<li><a href="Breakfast.html"> Breakfast </a></li>
+			<li><a href="Snacks.html"> Snacks </a></li>
+			<li><a href="Salads.html"> Salads </a></li>
+			<li><a href="Lunch.html"> Lunch </a></li>
+			<li><a href="Desserts.html"> Desserts </a></li>
+			<li><a href="Tell Us What You Think.html"><strong><em> Tell Us What You Think </em></strong></a></li>
+		</ul>
+	</div>
+	
+	<div id="content">
+		<h1> Fill in this form and let us know what you think to help us improve our services. </h1>
+		<form name="form" method="post" onsubmit="return validation()"> 
+			<label> First Name: * </label> 
+				<input type="text" name="first" placeholder="Enter first name.">
+			<br><br>
+			<label> Last Name: * </label> 
+				<input type="text" name="last" placeholder="Enter last name.">
+			<br><br>
+			<label> Email: * </label> 
+				<input type="text" name="email" placeholder="Enter email.">
+			<br><br>
+			<label> Recipes Tried: </label> <br>
+				<textarea name="tried"></textarea>
+			<br><br>
+			<label> Favorite Recipe: </label> 
+				<input type="text" name="favorite">
+			<br><br>
+			<label> Recipe You Want To See: </label> 
+				<input type="text" name="request">
+			<br><br>
+			<label> Rate Your Overall Experience: * </label> 
+				<input type="range" name="rate" min="1" max="10">
+			<br><br>
+			<input type="reset" value="Clear" onclick="clearThis();">
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+
+	<div id="footer">
+		<h5> &copy Tasty </h5>
+		<button onclick="scrollToTop()" id="scroll" title="Go to top"><strong> TOP </strong></button>
+	</div>
+
+	<script src="scroll.js"></script>
+</body>
+</html>
